@@ -119,27 +119,6 @@
 			"matrix": [-0.985967755317688, 9.554160129709999e-8, -0.1669357717037201, 0, -0.07704475522041321, 0.8871278166770935, 0.4550476372241974, 0, 0.14809341728687286, 0.4615238308906555, -0.874679446220398, 0, 11.72920036315918, 69.61640167236328, -91.51419830322266, 1]
 		}]
 	},
-	"images": [{
-		"url": "pm0025_00_Mouth1.png",
-		"uuid": "f4bc8362-6792-43a6-a35f-292d15252eca",
-		"name": "pm0025_00_Mouth1.png",
-		"originalUrl": "pm0025_00_Mouth1.png"
-	}, {
-		"url": "pm0025_00_BodyB1.png",
-		"uuid": "07c3a043-4bb1-4a02-9e53-0608ce4612ce",
-		"name": "pm0025_00_BodyB1.png",
-		"originalUrl": "pm0025_00_BodyB1.png"
-	}, {
-		"url": "pm0025_00_BodyA1.png",
-		"uuid": "57f12ed2-1e63-4c85-8e3b-430a1c29bafb",
-		"name": "pm0025_00_BodyA1.png",
-		"originalUrl": "pm0025_00_BodyA1.png"
-	}, {
-		"url": "pm0025_00_Eye1.png",
-		"uuid": "ad6659dc-74bd-41bd-8fbb-1a351d233cec",
-		"name": "pm0025_00_Eye1.png",
-		"originalUrl": "pm0025_00_Eye1.png"
-	}],
 	"textures": [{
 		"name": "pm0025_00_Mouth1.png",
 		"uuid": "ce54a797-f6a1-4c39-b0ea-a5e6b47f6e9c",
