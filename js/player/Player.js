@@ -9,7 +9,8 @@ export default class Player {
     // )
     this.loading = true;
     console.log(Loader.loadModel)
-    const path = 'https://raw.githubusercontent.com/diegoxdc99/introtowebgl/master/assets/BoilerplateApp/Models/gooseFull.js';
+    // const path = 'https://raw.githubusercontent.com/diegoxdc99/introtowebgl/master/assets/BoilerplateApp/Models/gooseFull.js';
+    const path = 'https://raw.githubusercontent.com/Llunnn/mini-game-demo/init/models/lion-cub.js';
     Loader.loadModel(path, (mesh) => {
       this.obj = mesh;
       this.loading = false;

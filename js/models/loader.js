@@ -4,7 +4,7 @@ const models = {};
 
 class Loader {
   constructor() {
-    this.loader = new THREE.JSONLoader();
+    this.loader = new THREE.ObjectLoader();
   }
   
   loadModel(path, fn) {

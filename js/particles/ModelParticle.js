@@ -9,17 +9,17 @@ let particleSystem;
 function createParticles(scene) { 
   loading = true;
   // const path = 'https://raw.githubusercontent.com/diegoxdc99/introtowebgl/master/assets/BoilerplateApp/Models/gooseFull.js';
-  const path = 'https://raw.githubusercontent.com/MazeRunners/GLMaze/master/lion-cub.json';
-  const self = this;
-  Loader.loadModel(path, (mesh) => {
-    particleSystem = mesh;
-    loading = false;
-    particleSystem.position.set(0,-10,400);
-    particleSystem.scale.set(2, 2, 2);
-    // particleSystem.rotation.y = Math.PI * 0.5;
-    // updateParticles(particleSystem)
-    scene.add(particleSystem);
-  });
+  // const path = 'https://github.com/Llunnn/mini-game-demo/blob/init/models/lion-cub.js';
+  // const self = this;
+  // Loader.loadModel(path, (mesh) => {
+  //   particleSystem = mesh;
+  //   loading = false;
+  //   particleSystem.position.set(0,-10,400);
+  //   particleSystem.scale.set(2, 2, 2);
+  //   // particleSystem.rotation.y = Math.PI * 0.5;
+  //   // updateParticles(particleSystem)
+  //   scene.add(particleSystem);
+  // });
 }
 
 function updateParticles(particleSystem) {
