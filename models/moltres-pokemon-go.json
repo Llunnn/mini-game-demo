@@ -45,55 +45,6 @@
         "uuid": "27B1492A-68A8-3F5D-84BD-E315E4D903DA",
         "type": "MeshPhongMaterial"
     }],
-    "textures": [{
-        "wrap": [1000,1000],
-        "image": "B2DD1DE4-ED28-3ACB-9FAF-9AD62FFC754E",
-        "minFilter": 1008,
-        "uuid": "2BF600A5-50EF-341C-927F-505C5F5E004F",
-        "anisotropy": 1,
-        "name": "fire_0_0_tga",
-        "repeat": [1,1],
-        "mapping": 300,
-        "magFilter": 1006
-    },{
-        "wrap": [1000,1000],
-        "image": "0AFA99A7-1F0F-3D8B-8C17-F3B8DCEF2373",
-        "minFilter": 1008,
-        "uuid": "B15DBE5C-C65F-3EF6-8B89-0036C972E4F9",
-        "anisotropy": 1,
-        "name": "fire_0_1_tga",
-        "repeat": [1,1],
-        "mapping": 300,
-        "magFilter": 1006
-    },{
-        "wrap": [1000,1000],
-        "image": "33560E16-0F71-3E84-8C71-43BAFF3B9C79",
-        "minFilter": 1008,
-        "uuid": "7294BBED-D5E3-399E-B413-04346AC61BC8",
-        "anisotropy": 1,
-        "name": "fire_0_2_tga",
-        "repeat": [1,1],
-        "mapping": 300,
-        "magFilter": 1006
-    }],
-    "images": [{
-        "uuid": "B2DD1DE4-ED28-3ACB-9FAF-9AD62FFC754E",
-        "name": "fire_0_0.tga",
-        "url": "fire_0_0.tga"
-    },{
-        "uuid": "0AFA99A7-1F0F-3D8B-8C17-F3B8DCEF2373",
-        "name": "fire_0_1.tga",
-        "url": "fire_0_1.tga"
-    },{
-        "uuid": "33560E16-0F71-3E84-8C71-43BAFF3B9C79",
-        "name": "fire_0_2.tga",
-        "url": "fire_0_2.tga"
-    }],
-    "animations": [{
-        "fps": 29,
-        "name": "default",
-        "tracks": []
-    }],
     "metadata": {
         "generator": "io_three",
         "type": "Object",
