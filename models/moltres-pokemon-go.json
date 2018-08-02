@@ -218,29 +218,6 @@
             },
             "skinIndices": []
         },
-        "materials": [{
-            "mapDiffuseAnisotropy": 1,
-            "DbgName": "mat_2",
-            "depthWrite": true,
-            "mapDiffuse": "fire_0_2.tga",
-            "shading": "phong",
-            "wireframe": false,
-            "doubleSided": true,
-            "DbgIndex": 0,
-            "colorAmbient": [0.956863,0.945098,0.635294],
-            "blending": "NormalBlending",
-            "opacity": 1,
-            "DbgColor": 15658734,
-            "depthTest": true,
-            "transparent": false,
-            "colorEmissive": [0,0,0],
-            "colorSpecular": [0.073725,0.073725,0.073725],
-            "visible": true,
-            "mapDiffuseRepeat": [1,1],
-            "mapDiffuseWrap": ["RepeatWrapping","RepeatWrapping"],
-            "colorDiffuse": [0.956863,0.945098,0.635294],
-            "specularCoef": 50
-        }],
         "type": "Geometry"
     },{
         "uuid": "87BB0540-E8E1-35FC-86B9-6636A75808C2",
@@ -268,29 +245,6 @@
             },
             "skinIndices": []
         },
-        "materials": [{
-            "mapDiffuseAnisotropy": 1,
-            "DbgName": "mat_0",
-            "depthWrite": true,
-            "mapDiffuse": "fire_0_0.tga",
-            "shading": "phong",
-            "wireframe": false,
-            "doubleSided": true,
-            "DbgIndex": 0,
-            "colorAmbient": [0.8,0.8,0.8],
-            "blending": "NormalBlending",
-            "opacity": 1,
-            "DbgColor": 15658734,
-            "depthTest": true,
-            "transparent": false,
-            "colorEmissive": [0,0,0],
-            "colorSpecular": [0.05,0.05,0.05],
-            "visible": true,
-            "mapDiffuseRepeat": [1,1],
-            "mapDiffuseWrap": ["RepeatWrapping","RepeatWrapping"],
-            "colorDiffuse": [0.8,0.8,0.8],
-            "specularCoef": 50
-        }],
         "type": "Geometry"
     },{
         "uuid": "D8FA8170-14B1-3A3A-B23E-7361BC56C14F",
@@ -318,29 +272,6 @@
             },
             "skinIndices": []
         },
-        "materials": [{
-            "mapDiffuseAnisotropy": 1,
-            "DbgName": "mat_1",
-            "depthWrite": true,
-            "mapDiffuse": "fire_0_1.tga",
-            "shading": "phong",
-            "wireframe": false,
-            "doubleSided": true,
-            "DbgIndex": 0,
-            "colorAmbient": [0.956863,0.945098,0.635294],
-            "blending": "NormalBlending",
-            "opacity": 1,
-            "DbgColor": 15658734,
-            "depthTest": true,
-            "transparent": false,
-            "colorEmissive": [0,0,0],
-            "colorSpecular": [0.073725,0.073725,0.073725],
-            "visible": true,
-            "mapDiffuseRepeat": [1,1],
-            "mapDiffuseWrap": ["RepeatWrapping","RepeatWrapping"],
-            "colorDiffuse": [0.956863,0.945098,0.635294],
-            "specularCoef": 50
-        }],
         "type": "Geometry"
     }]
 }
