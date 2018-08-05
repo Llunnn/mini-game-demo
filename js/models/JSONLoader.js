@@ -2,17 +2,17 @@ import * as THREE from '../libs/three'
 
 const models = {};
 
-class Loader {
+class JSONLoader {
   constructor() {
-    this.loader = new THREE.ObjectLoader();
+    this.loader = new THREE.JSONLoader();
   }
   
   loadModel(path, fn) {
     let pMaterial = new THREE.PointsMaterial({
       color: 0xffffff,
-      size: 4
+      size: 0.01
     });
-    if (models[path]) {
+    if (false && models[path]) {
       let mesh = new THREE.ParticleSystem(geometry, pMaterial);
       fn(mesh);
     } else {
@@ -26,4 +26,4 @@ class Loader {
     
 }
 
-export default new Loader();
+export default new JSONLoader()
