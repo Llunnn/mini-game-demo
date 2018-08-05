@@ -9,8 +9,8 @@
 	},
 	"compileType": "game",
 	"libVersion": "1.9.97",
-	"appid": "wx4ae96ebaaa93e809",
-	"projectname": "mini-game-demo",
+	"appid": "touristappid",
+	"projectname": "demo2",
 	"isGameTourist": true,
 	"condition": {
 		"search": {
