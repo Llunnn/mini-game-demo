@@ -1,6 +1,6 @@
 import * as THREE from './libs/three'
 import TWEEN from './libs/Tween'
-import { createParticles, updateParticles } from './particles/ModelParticle'
+import { createParticles, updateParticles } from './particles/CpuParticle'
 
 const ctx = canvas.getContext('webgl')
 const renderer = new THREE.WebGLRenderer({ context: ctx })
@@ -31,10 +31,7 @@ export default class Main {
     this.scene.add(this.camera);
 
     // particle
-    createParticles((particles) => {
-      this.scene.add(particles);
-      this.particles = particles;
-    });
+    createParticles(this.scene);
     // this.particles.position.z = -400;
     // this.scene.add(this.particles);
     
@@ -51,7 +48,7 @@ export default class Main {
 
   // 游戏逻辑更新主函数
   update() {
-    if (this.particles) this.particles.rotation.z += 0.01;
+    // if (this.particles) this.particles.rotation.z += 0.01;
     TWEEN.update();
   }
 

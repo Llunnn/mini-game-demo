@@ -2,23 +2,26 @@ import * as THREE from '../libs/three'
 import TWEEN from '../libs/Tween'
 import ObjectLoader from '../models/ObjectLoader'
 
+const loader = new THREE.ObjectLoader();
+
 let loading = 0;
 // let model;
 let particleSystemDuck;
 let particleSystem;
 let verticesTo;
 let verticesFrom;
+let geometry;
+let geometry2;
 
-function createParticles(fn) { 
-  const path1 = 'https://raw.githubusercontent.com/Llunnn/mini-game-demo/init/models/pikachu-pokemon-go.json';
-  const path2 = 'https://raw.githubusercontent.com/Llunnn/mini-game-demo/init/models/moltres-pokemon-go.json';
+function createParticles(scene) { 
+  const path1 = 'https://raw.githubusercontent.com/Llunnn/mini-game-demo/master/models/pikachu-pokemon-go.json';
+  const path2 = 'https://raw.githubusercontent.com/Llunnn/mini-game-demo/master/models/moltres-pokemon-go.json';
   const self = this;
-  ObjectLoader.loadModel(path1, (obj) => {
+  loader.load(path1, function ( obj ) {
     let pMaterial = new THREE.PointsMaterial({
       color: 0xffffff,
-      size: 1
+      size: 0.8
     });
-    let geometry;
     obj.children[0].children.forEach((item) => {
       if (!geometry) {
         geometry = item.geometry;
@@ -26,8 +29,7 @@ function createParticles(fn) {
         geometry.merge(item.geometry);
       }
     });
-    obj.children[0].children[2].geometry.merge(obj.children[0].children[1].geometry);
-    let particleSystem = new THREE.Points(obj.children[0].children[2].geometry, pMaterial);
+    let particleSystem = new THREE.Points(geometry, pMaterial);
 
     particleSystem.position.set(0, -12, 400);
     particleSystem.scale.set(0.6, 0.6, 0.6);
@@ -37,16 +39,19 @@ function createParticles(fn) {
     verticesFrom = JSON.parse(JSON.stringify(particleSystem.geometry.vertices));
     
     updateParticles(particleSystem);
-    fn(particleSystem);
+    scene.add(particleSystem);
     loading++;
   });
 
-  ObjectLoader.loadModel(path2, (obj) => {
-    const vertices = [];
+  loader.load(path2,function ( obj ) {
     obj.children[0].children.forEach((item) => {
-      vertices.push(...item.geometry.vertices);
+      if (!geometry2) {
+        geometry2 = item.geometry;
+      } else {
+        geometry2.merge(item.geometry);
+      }
     });
-    verticesTo = JSON.parse(JSON.stringify([...vertices, ...vertices]));
+    verticesTo = JSON.parse(JSON.stringify(geometry2.vertices));
     loading++;
   })
 }
